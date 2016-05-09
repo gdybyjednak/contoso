@@ -27,7 +27,7 @@ main {
 }
 
 @font-face {
-    font-family: 'News Cycle';
+    font-family: 'News Cycle' ;
     src: url('../fonts/news_cycle.ttf') format('truetype');
 }
 
@@ -37,7 +37,7 @@ main {
 }
 
 body {
-    font-family: 'News Cycle';
+    font-family: 'News Cycle' !important;
 }
 
 header {
@@ -77,9 +77,6 @@ main > h3 {
     header {
         padding: 0px;
     }
-    article {
-        box-shadow: none;
-    }
     header h1 {
         font-size: 2em;
     }
@@ -88,25 +85,10 @@ main > h3 {
     }
 }
 
-section#carousel > figure > img {
-    display: none;
-    margin: 0px auto;
-}
-
-section#carousel > figure.visible > img {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-section#carousel > figure > figcaption {
-    display: none;
-}
-
-section#carousel > figure.visible > figcaption {
-    display: block;
+.carousel-inner {
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
+}
+.carousel .item > img {
+    display: inline-block;
 }
 
